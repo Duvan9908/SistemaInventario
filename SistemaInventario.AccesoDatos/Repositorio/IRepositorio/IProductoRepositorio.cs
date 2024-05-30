@@ -8,8 +8,11 @@ using SistemaInventario.Modelos;
 
 namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
 {
-    public interface IMarcaRepositorio : IRepositorio<Marca>
+    public interface IProductoRepositorio : IRepositorio<Producto>
     {
-        void Actualizar(Marca marca);
+        void Actualizar(Producto producto);
+
+        IEnumerable<SelectListItem> ObtenerTodosDropdownList(string obj);
+
     }
 }
