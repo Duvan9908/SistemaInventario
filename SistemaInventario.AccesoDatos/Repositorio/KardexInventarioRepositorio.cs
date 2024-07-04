@@ -32,7 +32,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
                 kardex.Tipo = tipo;
                 kardex.Detalle = detalle;
                 kardex.StockAnterior = stockAnterior;
-                kardex.Cantidad = bodegaProducto.Cantidad;
+                kardex.Cantidad = cantidad;
                 kardex.Costo = bodegaProducto.Producto.Costo;
                 kardex.Stock = stockAnterior + cantidad;
                 kardex.Total = kardex.Stock * kardex.Costo;
@@ -49,7 +49,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
                 kardex.Tipo = tipo;
                 kardex.Detalle = detalle;
                 kardex.StockAnterior = stockAnterior;
-                kardex.Cantidad = bodegaProducto.Cantidad;
+                kardex.Cantidad = cantidad;
                 kardex.Costo = bodegaProducto.Producto.Costo;
                 kardex.Stock = stockAnterior - cantidad;
                 kardex.Total = kardex.Stock * kardex.Costo;
